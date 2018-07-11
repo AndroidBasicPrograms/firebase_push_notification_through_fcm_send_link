@@ -74,9 +74,10 @@ public class MyFirebaseMessangingServiceNew extends FirebaseMessagingService{
             e.printStackTrace();
         }
 
+        int notificationId = new Random().nextInt(60000);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(0, notificationBuilder.build());
+        notificationManager.notify(notificationId, notificationBuilder.build());
 
     }
 }
