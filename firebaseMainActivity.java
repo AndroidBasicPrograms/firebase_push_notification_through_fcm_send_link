@@ -25,7 +25,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class firebaseMainActivity extends AppCompatActivity {
-    private static final String AUTH_KEY = "key=AIzaSyCS3pzVRa-Bx6Ygmm-mKnInY5yo-cpDbxQ";
+    private static final String AUTH_KEY = "key=....";
     public static boolean isAppRunning;
     TextView tv;
     @Override
@@ -74,7 +74,7 @@ public class firebaseMainActivity extends AppCompatActivity {
         try {
             jData.put("title", "FireBaseDemo");
             jData.put("body", "Welome");
-            jData.put("picture", "http://nuxvomica.xyz/foodies/uploads/restaurant/resto_1529316485.jpg");
+            jData.put("picture", "path");
 
             jPayload.put("to", FirebaseInstanceId.getInstance().getToken().toString());
             jPayload.put("priority", "high");
